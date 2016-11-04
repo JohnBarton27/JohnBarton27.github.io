@@ -43,7 +43,7 @@
 	<!-- Flexslider -->
 	<link rel="stylesheet" href="css/cd-hero.css">
 	<!-- Style Swicther -->
-	<link id="style-switch" href="css/presets/preset3.css" media="screen" rel="stylesheet" type="text/css">
+	<link id="style-switch" href="css/presets/preset1.css" media="screen" rel="stylesheet" type="text/css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -73,20 +73,19 @@
 	<!-- Style switcher end -->
 
 	<div class="body-inner">
-
 	<!-- Header start -->
-	<header id="header" class="navbar-fixed-top header" role="banner">
+	<header id="header" class="navbar-fixed-top header2" role="banner">
 		<div class="container">
 			<div class="row">
 				<!-- Logo start -->
 				<div class="navbar-header">
-				   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				    </button>
-				    <div class="navbar-brand navbar-bg">
+				    <div class="navbar-brand">
 					    <a href="index.html">
 					    	<img class="img-responsive" src="images/logo.png" alt="logo">
 					    </a> 
@@ -98,8 +97,8 @@
                        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
                        		<div class="dropdown-menu">
 								<ul>
-		                            <li class="active"><a href="index.html">Home 1</a></li>
-		                            <li><a href="index-2.html">Home 2</a></li>
+		                            <li><a href="index.html">Home 1</a></li>
+		                            <li class="active"><a href="index-2.html">Home 2</a></li>
 		                            <li><a href="index-3.html">Home 3</a></li>
 		                            <li><a href="index-4.html">Home 4</a></li>
 		                        </ul>
@@ -167,138 +166,245 @@
 
 	<!-- Slider start -->
 	<section id="home" class="no-padding">	
-    	<div id="main-slide" class="cd-hero">
-			<ul class="cd-hero-slider">
-				<li class="selected">
-					<div class="overlay2">
-						<img class="" src="images/slider/bg1.jpg" alt="slider">
-					</div>
-					<div class="cd-full-width">
-						<h2>Need To Invent The Future!</h2>
-						<h3>We Making Difference To Great Things Possible</h3>
-						<a href="#0" class="btn btn-primary white cd-btn">Start Now</a>
-						<a href="#0" class="btn btn-primary solid cd-btn">Learn More</a>
-					</div> <!-- .cd-full-width -->
-				</li>
-				<li>
-					<div class="overlay2">
-						<img class="" src="images/slider/bg2.jpg" alt="slider">
-					</div>
-					<div class="cd-half-width">
-						<h2>How Big Can You Dream?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-						<a href="#0" class="cd-btn btn btn-primary solid">Take a Tour</a>
-					</div> <!-- .cd-half-width -->
 
-					<div class="cd-half-width cd-img-container">
-						<img src="images/slider/bg-thumb1.png" alt="">
-					</div> <!-- .cd-half-width.cd-img-container -->
-				</li>
-				<li>
-					<div class="overlay2">
-						<img class="" src="images/slider/bg3.jpg" alt="slider">
-					</div>
-					<div class="cd-half-width cd-img-container img-right">
-						<img src="images/slider/bg-thumb2.png" alt="">
-					</div> <!-- .cd-half-width.cd-img-container -->
-					<div class="cd-half-width">
-						<h2>Your Challenge is Our Progress</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-						<a href="#0" class="cd-btn btn btn-primary white">Start</a>
-						<a href="#0" class="cd-btn btn secondary btn-primary solid">Learn More</a>
-					</div> <!-- .cd-half-width -->
-				</li>
-				<li class="cd-bg-video">
-					<div class="cd-full-width">
-						<h2>WE ARE HERE TO MAKE IT HAPPEN</h2>
-						<h3>We Making Difference To Great Things Possible</h3>
+    	<div id="main-slide" class="ts-flex-slider">
 
-						<a href="#0" class="cd-btn btn btn-primary solid">Learn more</a>
-					</div> <!-- .cd-full-width -->
-
-					<div class="cd-bg-video-wrapper" data-video="videos/video">
-						<!-- video element will be loaded using jQuery -->
-					</div> <!-- .cd-bg-video-wrapper -->
-				</li>
-			</ul> <!--/ cd-hero-slider -->
-
-		<div class="cd-slider-nav">
-			<nav>
-				<span class="cd-marker item-1"></span>
-				<ul>
-					<li class="selected"><a href="#0"><i class="fa fa-bicycle"></i> Invent</a></li>
-					<li><a href="#0"><i class="fa fa-hotel"></i> Dream</a></li>
-					<li><a href="#0"><i class="fa fa-android"></i> Tech</a></li>
-					<li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>
+			<div class="flexSlideshow flexslider">
+				<ul class="slides">
+					<li>
+						<div class="overlay2">
+							<img class="" src="images/slider/bg1.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                    		<h2 class="animated2">
+	                        		Need To Invent The Future!
+	                        	</h2>
+	                            <h3 class="animated3">
+	                            	We Making Difference To Great Things Possible
+	                            </h3>
+	                            <p class="animated4"><a href="#" class="slider btn btn-primary white">Check Now</a></p>
+	                        </div>
+	                    </div>
+					</li>
+					<li>
+						<div class="overlay2">
+							<img class="" src="images/slider/bg2.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                            <h2 class="animated4">
+	                                How Big Can You Dream?
+	                            </h2>
+	                            <h3 class="animated5">
+	                            	We are here to make it happen
+	                            </h3>		
+	                            <p class="animated6"><a href="#" class="slider btn btn-primary white">Buy Now</a></p>	     
+	                        </div>
+	                    </div>
+					</li>
+					<li>
+						<div class="overlay2">
+							<img class="" src="images/slider/bg3.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                            <h2 class="animated7">
+	                                Your Challenge is Our Progress
+	                            </h2>
+	                            <h3 class="animated8">
+	                            	So, You Don't Need to Go Anywhere Today
+	                            </h3>		
+	                            <div class="">
+	                                <a class="animated4 slider btn btn-primary btn-min-block white" href="#">Get Now</a><a class="animated4 slider btn btn-primary btn-min-block solid" href="#">Live Demo</a>
+	                            </div>     
+	                        </div>
+	                    </div>
+					</li>
 				</ul>
-			</nav> 
-		</div> <!-- .cd-slider-nav -->
-
+			</div>
 		</div><!--/ Main slider end -->    	
     </section> <!--/ Slider end -->
 
-
-    <!-- Service box start -->
-	<section id="service" class="service angle">
+    <!-- About tab start -->
+	<section id="about" class="about angle">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 heading">
-					<span class="title-icon pull-left"><i class="fa fa-cogs"></i></span>
-					<h2 class="title">Service We Provide <span class="title-desc">A Quality Experience Team with 4 years experience</span></h2>
-				</div>
-			</div><!-- Title row end -->
+				<div class="landing-tab clearfix">
+					<ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
+					  	<li class="active">
+					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab">
+					  			<span class="tab-icon"><i class="fa fa-info"></i></span>
+					  			<div class="tab-info">
+						  			<h3>Who Are We</h3>
+					  			</div>
+					  		</a>
+					  	</li>
+					  	<li>
+						  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-briefcase"></i></span>
+					  			<div class="tab-info">
+						  			<h3>Our Company</h3>
+					  			</div>
+						  	</a>
+						</li>
+					 	<li>
+						  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-android"></i></span>
+					  			<div class="tab-info">
+						  			<h3>What We Do</h3>
+					  			</div>
+						  	</a>
+						</li>
+						<li>
+						  	<a class="animated fadeIn" href="#tab_d" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-pagelines"></i></span>
+					  			<div class="tab-info">
+						  			<h3>Modern Design</h3>
+					  			</div>
+						  	</a>
+						</li>
+						<li>
+						  	<a class="animated fadeIn" href="#tab_e" data-toggle="tab">
+						  		<span class="tab-icon"><i class="fa fa-support"></i></span>
+					  			<div class="tab-info">
+						  			<h3>Dedicated Support</h3>
+					  			</div>
+						  	</a>
+						</li>
+					</ul>
+					<div class="tab-content col-md-9 col-sm-7">
+				        <div class="tab-pane active animated fadeInRight" id="tab_a">
+				        	<i class="fa fa-trophy big"></i>
+				            <h3>We Are Awwared Winning Company</h3> 
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+				        </div>
+				        <div class="tab-pane animated fadeInLeft" id="tab_b">
+				        	<i class="fa fa-briefcase big"></i>
+				            <h3>We Have Worldwide Business</h3> 
+							<p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly PBR retro, Etsy VHS kitsch actually messenger bag pug. Pbrb semiotics try-hard, Schlitz occupy dreamcatcher master cleanse Marfa Vice tofu. </p>							 
+				        </div>
+				        <div class="tab-pane animated fadeIn" id="tab_c">
+				            <i class="fa fa-android big"></i>
+				            <h3>We Build Readymade Applications</h3> 
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+				        </div>
+				        <div class="tab-pane animated fadeIn" id="tab_d">
+				            <i class="fa fa-pagelines big"></i>
+				            <h3>Clean and Modern Design</h3> 
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+				        </div>
+				        <div class="tab-pane animated fadeIn" id="tab_e">
+				            <i class="fa fa-support big"></i>
+				            <h3>24/7 Dedicated Support</h3> 
+				            <p>Occupy selfies Tonx, +1 Truffaut beard organic normcore tilde flannel artisan squid cray single-origin coffee. Master cleanse vinyl Austin kogi, semiotics skateboard fap wayfarers health goth. Helvetica cray church-key hashtag Carles. Four dollar toast meggings seitan, Tonx pork belly VHS Bushwick. Chambray banh mi cornhole. Locavore messenger bag seitan.</p>
+				        </div>
+					</div><!-- tab content -->
+	    		</div><!-- Overview tab end -->
+			</div><!--/ Content row end -->
+		</div><!-- Container end -->
+    </section><!-- About end -->
 
+    <section id="image-block" class="image-block no-padding">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
-						<div class="service-content text-center">
-							<span class="service-icon icon-pentagon"><i class="fa fa-tachometer"></i></span>
-							<h3>Web Design</h3>
-							<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid befor</p>
-						</div>
-					</div><!--/ End first service -->
-
-					<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s" >
-						<div class="service-content text-center">
-							<span class="service-icon icon-pentagon"><i class="fa fa-android"></i></span>
-							<h3>Apps Development</h3>
-							<p>Food truck master cleanse mixtape minim Portland, cardigan stumptown chambray swag</p>
-						</div>
-						
-					</div><!--/ End Second service -->
-
-					<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
-						<div class="service-content text-center">
-							<span class="service-icon icon-pentagon"><i class="fa fa-shopping-cart"></i></span>
-							<h3>eCommerce Websites</h3>
-							<p>Neutra Thundercats craft beer, listicle meggings bicycle rights 90's XOXO beard cardiga</p>
-						</div>
-					</div><!--/ End Third service -->
-
-					<div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
-						<div class="service-content text-center">
-							<span class="service-icon icon-pentagon"><i class="fa fa-lightbulb-o"></i></span>
-							<h3>Design for Startups</h3>
-							<p>We design beautiful modern engaging websites that always latest responsive technologies.</p>
-						</div>
-					</div><!--/ End 4th service -->
+				<div class="col-md-6 ts-padding" style="height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
 				</div>
-			</div><!-- Content row end -->
+				<div class="col-md-6 ts-padding img-block-right">
+					<div class="img-block-head text-center">
+						<h2>Know More About Our Company</h2>
+						<h3>Why Choose Us</h3>
+						<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.
+						</p>
+					</div>
+
+					<div class="gap-30"></div>
+
+					<div class="image-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-bicycle"></i></span>
+						<div class="feature-content">
+							<h3>Tons of Features</h3>
+							<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+						</div>
+					</div><!--/ End 1st block -->
+
+					<div class="image-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-diamond"></i></span>
+						<div class="feature-content">
+							<h3>PowerPack Theme</h3>
+							<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+						</div>
+					</div><!--/ End 1st block -->
+
+					<div class="image-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-street-view"></i></span>
+						<div class="feature-content">
+							<h3>Day Night Support</h3>
+							<p>Simply dummy text and typesettings industry has been the industry</p>
+						</div>
+					</div><!--/ End 1st block -->
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Counter Strat -->
+	<section class="ts_counter no-padding">
+		<div class="container-fluid">
+			<div class="row facts-wrapper wow fadeInLeft text-center">
+				<div class="facts one col-md-3 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-user"></i></span>
+					<div class="facts-num">
+						<span class="counter">1200</span>
+					</div>
+					<h3>Clients</h3> 
+				</div>
+
+				<div class="facts two col-md-3 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-institution"></i></span>
+					<div class="facts-num">
+						<span class="counter">1277</span>
+					</div>
+					<h3>Item Sold</h3> 
+				</div>
+
+				<div class="facts three col-md-3 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
+					<div class="facts-num">
+						<span class="counter">869</span>
+					</div>
+					<h3>Projects</h3> 
+				</div>
+
+				<div class="facts four col-md-3 col-sm-6">
+					<span class="facts-icon"><i class="fa fa-trophy"></i></span>
+					<div class="facts-num">
+						<span class="counter">76</span>
+					</div>
+					<h3>Awwards</h3> 
+				</div>
+
+			</div>
 		</div><!--/ Container end -->
-	</section><!--/ Service box end -->
-   
-	<!-- Portfolio start -->
-	<section id="portfolio" class="portfolio">
+    </section><!--/ Counter end -->
+
+
+    <!-- Portfolio start -->
+	<section id="portfolio" class="portfolio portfolio-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 heading">
-					<span class="title-icon classic pull-left"><i class="fa fa-suitcase"></i></span>
-					<h2 class="title classic">Our Awesome Work</h2>
+				<div class="col-md-12 heading text-center">
+					<span class="icon-pentagon wow bounceIn"><i class="fa fa-suitcase"></i></span>
+					<h2 class="title2">Project Completed
+						<span class="title-desc">A Quality Experience Team with 4 years experience</span>
+					</h2>
 				</div>
 			</div> <!-- Title row end -->
 
 			<!--Isotope filter start -->
-			<div class="row text-right">
+			<div class="row text-center">
 				<div class="isotope-nav" data-isotope-nav="isotope">
 					<ul>
 						<li><a href="#" class="active" data-filter="*">All</a></li>
@@ -309,9 +415,7 @@
 					</ul>
 				</div>
 			</div><!-- Isotope filter end -->
-		</div>
-		
-		<div class="container-fluid">
+			
 			<div class="row">
 				<div id="isotope" class="isotope">
 					<div class="col-sm-3 web-design isotope-item">
@@ -422,49 +526,14 @@
 		</div><!-- Container end -->
 	</section><!-- Portfolio end -->
 
-	<!-- Counter Strat -->
-	<section class="ts_counter no-padding">
-		<div class="container-fluid">
-			<div class="row facts-wrapper wow fadeInLeft text-center">
-				<div class="facts one col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-user"></i></span>
-					<div class="facts-num">
-						<span class="counter">1200</span>
-					</div>
-					<h3>Clients</h3> 
-				</div>
+	
 
-				<div class="facts two col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-institution"></i></span>
-					<div class="facts-num">
-						<span class="counter">1277</span>
-					</div>
-					<h3>Item Sold</h3> 
-				</div>
 
-				<div class="facts three col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-suitcase"></i></span>
-					<div class="facts-num">
-						<span class="counter">869</span>
-					</div>
-					<h3>Projects</h3> 
-				</div>
 
-				<div class="facts four col-md-3 col-sm-6">
-					<span class="facts-icon"><i class="fa fa-trophy"></i></span>
-					<div class="facts-num">
-						<span class="counter">76</span>
-					</div>
-					<h3>Awwards</h3> 
-				</div>
-
-			</div>
-		</div><!--/ Container end -->
-    </section><!--/ Counter end -->
-
-	<!-- Feature box start -->
+	<!-- Service box start -->
 	<section id="feature" class="feature">
 		<div class="container">
+
 			<div class="row">
 				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 					<span class="feature-icon pull-left" ><i class="fa fa-heart-o"></i></span>
@@ -480,7 +549,7 @@
 						<h3>Useful Shortcodes</h3>
 						<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 					</div>
-				</div><!--/ End 2nd featurebox -->
+				</div><!--/ End first featurebox -->
 
 				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 					<span class="feature-icon pull-left" ><i class="fa fa-film"></i></span>
@@ -488,7 +557,7 @@
 						<h3>Parallax Section</h3>
 						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 					</div>
-				</div><!--/ End 3rd featurebox -->
+				</div><!--/ End first featurebox -->
 			</div><!-- Content row end -->
 
 			<div class="gap-40"></div>
@@ -500,7 +569,7 @@
 						<h3>Multipurpose Concept</h3>
 						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 					</div>
-				</div><!--/ End 1st featurebox -->
+				</div><!--/ End first featurebox -->
 
 				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 					<span class="feature-icon pull-left" ><i class="fa fa-desktop"></i></span>
@@ -508,7 +577,7 @@
 						<h3>Responsive Layout</h3>
 						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
 					</div>
-				</div><!--/ End 2nd featurebox -->
+				</div><!--/ End first featurebox -->
 
 				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
 					<span class="feature-icon pull-left" ><i class="fa fa-pagelines"></i></span>
@@ -516,7 +585,7 @@
 						<h3>Light wight Performance</h3>
 						<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
 					</div>
-				</div><!--/ End 3rd featurebox -->
+				</div><!--/ End first featurebox -->
 
 			</div><!-- Content row end -->
 
@@ -549,52 +618,26 @@
 			</div><!-- Content row end -->
 
 		</div><!--/ Container end -->
-	</section><!--/ Feature box end -->
+	</section><!--/ Service box end -->
 
 
-	<section id="image-block" class="image-block no-padding">
-		<div class="container-fluid">
+	 <!-- Parallax 2 start -->
+	<section class="parallax parallax2">
+		<div class="parallax-overlay"></div>
+		<div class="container">
 			<div class="row">
-				<div class="col-md-6 ts-padding" style="height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
-				</div>
-				<div class="col-md-6 ts-padding img-block-right">
-					<div class="img-block-head text-center">
-						<h2>Know More About Our Company</h2>
-						<h3>Why Choose Us</h3>
-						<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.
-						</p>
-					</div>
-
-					<div class="gap-30"></div>
-
-					<div class="image-block-content">
-						<span class="feature-icon pull-left" ><i class="fa fa-bicycle"></i></span>
-						<div class="feature-content">
-							<h3>Tons of Features</h3>
-							<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-						</div>
-					</div><!--/ End 1st block -->
-
-					<div class="image-block-content">
-						<span class="feature-icon pull-left" ><i class="fa fa-diamond"></i></span>
-						<div class="feature-content">
-							<h3>PowerPack Theme</h3>
-							<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
-						</div>
-					</div><!--/ End 1st block -->
-
-					<div class="image-block-content">
-						<span class="feature-icon pull-left" ><i class="fa fa-street-view"></i></span>
-						<div class="feature-content">
-							<h3>Day Night Support</h3>
-							<p>Simply dummy text and typesettings industry has been the industry</p>
-						</div>
-					</div><!--/ End 1st block -->
-
+				<div class="col-md-12 text-center">
+					<h2>Are You Ready to Buy This Template!</h2>
+					<h3>Just Click Button and Use Your Own</h3>
+					<p>
+						<a href="#" class="btn btn-primary white">Purchase Now</a>
+						<a href="#" class="btn btn-primary solid">Get In Touch</a>
+					</p>
 				</div>
 			</div>
-		</div>
-	</section><!--/ Image block end -->
+		</div><!-- Container end -->
+    </section><!-- Parallax 2 end -->
+
 
 
 	<!-- Team start -->
@@ -692,103 +735,9 @@
 		</div><!--/ Container end -->
     </section><!--/ Team end -->
 
-    <!-- Parallax 1 start -->
-	<section class="parallax parallax1">
-		<div class="parallax-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2>Are You Ready to Buy This Template!</h2>
-					<h3>Just Click Button and Use Your Own</h3>
-					<p>
-						<a href="#" class="btn btn-primary white">Purchase Now</a>
-						<a href="#" class="btn btn-primary solid">Get In Touch</a>
-					</p>
-				</div>
-			</div>
-		</div><!-- Container end -->
-    </section><!-- Parallax 1 end -->
-
-    <!-- Pricing table start -->
-	<section id="pricing" class="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 heading">
-					<span class="title-icon pull-left"><i class="fa fa-university"></i></span>
-					<h2 class="title">Pricing Table <span class="title-desc">We Love to Work with Passion</span></h2>
-				</div>
-			</div><!-- Title row end -->
-	  		<div class="row">
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Basic <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>49</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Standared <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>99</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.4s">
-				    <div class="plan text-center featured">
-				        <span class="plan-name">Professional <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>149</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Premium <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>399</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-			</div><!--/ Content row end -->
-		</div><!--/  Container end-->
-	</section><!--/ Pricing table end -->
-
 
 	<!-- Testimonial start-->
-	<section class="testimonial parallax parallax2">
+	<section class="testimonial parallax parallax3">
 		<div class="parallax-overlay"></div>
 	  	<div class="container">
 		    <div class="row">
@@ -832,95 +781,36 @@
 	</section><!--/ Testimonial end-->
 
 
-	<!-- Clients start -->
-	<section id="clients" class="clients">
+	<!-- Newsletter start -->
+	<section id="newsletter" class="newsletter">
 		<div class="container">
-			<div class="row wow fadeInLeft">
-		      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client1.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client2.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client3.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client4.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client5.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client6.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client7.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client8.png" alt="client">
-		          </a>
-		        </figure>
-		      </div><!-- Owl carousel end -->
-	    	</div><!-- Main row end -->
+		  	<div class="row">
+				<div class="col-md-12 heading text-center">
+					<span class="icon-pentagon wow bounceIn animated"><i class="fa fa-envelope"></i></span>
+					<h2 class="title2">Subscribe With Us
+						<span class="title-desc">We Love to Work with Passion</span>
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form action="#" method="post" id="newsletter-form" class="newsletter-form wow bounceIn" data-wow-duration=".8s">
+						<div class="form-group">
+							<input type="email" name="email" id="newsletter-form-email" class="form-control form-control-lg" placeholder="Enter your email address" autocomplete="off">
+							<button class="btn btn-primary solid">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
-	</section><!--/ Clients end -->
+	</section><!-- Newsletter end -->
 	
 
 	<!-- Footer start -->
-	<footer id="footer" class="footer">
+	<footer id="footer" class="footer footer2">
 		<div class="container">
+
 			<div class="row">
-				<div class="col-md-4 col-sm-12 footer-widget">
-					<h3 class="widget-title">Recent Posts</h3>
-					<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Bulgaria claims to find Europe's 'oldest town'</a></h4>
-								<p class="post-meta">
-									<span class="author">Posted by John Doe</span>
-									<span class="post-meta-cat">in<a href="#"> Blog</a></span>
-								</p>
-							</div>
-						</div><!-- 1st Latest Post end -->
-
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Few Answers in Case of Murdered Law Professor</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Mar 15, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">03</a></span>
-								</p>
-							</div>
-						</div><!-- 2nd Latest Post end -->
-
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Over the year we have lots of experience in our field</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Apr 17, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">14</a></span>
-								</p>
-							</div>
-						</div><!-- 3rd Latest Post end -->
-	
-				</div><!--/ End Recent Posts-->
-				
 
 				<div class="col-md-4 col-sm-12 footer-widget">
 					<h3 class="widget-title">Flickr Photos</h3>
@@ -956,39 +846,58 @@
 							</a>
 						</div>
 					</div>
+
+						
 				</div><!--/ end flickr -->
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Quick Links</h3>
+
+					<ul class="unstyled arrow">
+						<li><a href="#">About CraftTheme</a></li>
+						<li><a href="#">How We Help</a></li>
+						<li><a href="#">Upcoming Events</a></li>
+						<li><a href="#">Customer Support</a></li>
+						<li><a href="#">Fill a Form</a></li>
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Shortcodes</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">404 Error Page</a></li>
+						<li><a href="#">Coming Soon</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+	
+				</div><!--/ End Recent Posts-->
+
 
 				<div class="col-md-3 col-sm-12 footer-widget footer-about-us">
 					<h3 class="widget-title">About Craft</h3>
 					<p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
-					<h4>Address</h4>
-					<p>1102 Saint Marys, Junction City, KS</p>
+					<p><strong>Address: </strong>1102 Saint Marys, Junction City, KS</p>
 					<div class="row">
 						<div class="col-md-6">
-							<h4>Email:</h4>
+							<strong>Email: </strong>
 							<p>info@craftbd.com</p>
 						</div>
 						<div class="col-md-6">
-							<h4>Phone No.</h4>
+							<strong>Phone No.</strong>
 							<p>+(785) 238-4131</p>
 						</div>
 					</div>
-                    <form action="#" role="form">
-                        <div class="input-group subscribe">
-                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                            <span class="input-group-addon">
-                              <button class="btn" type="submit"><i class="fa fa-envelope-o"> </i></button>
-                            </span>                        
-                        </div>
-                    </form>
+					<br/>
+					<p><a href="#" class="btn btn-primary solid square">Purchase Now <i class="fa fa-long-arrow-right"></i></a></p>
 				</div><!--/ end about us -->
+
+
+
 
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</footer><!-- Footer end -->
 	
 
-	<!-- Copyright start -->
+	<!-- Footer start -->
 	<section id="copyright" class="copyright angle">
 		<div class="container">
 			<div class="row">
@@ -1031,7 +940,7 @@
 				<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
 			</div>
 		</div><!--/ Container end -->
-	</section><!--/ Copyright end -->
+	</section><!--/ Footer end -->
 
 	<!-- Javascript Files
 	================================================== -->
@@ -1048,7 +957,7 @@
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 	<!-- Bxslider -->
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<!-- CD Hero slider -->
+	<!-- Owl Carousel -->
 	<script type="text/javascript" src="js/cd-hero.js"></script>
 	<!-- Isotope -->
 	<script type="text/javascript" src="js/isotope.js"></script>
