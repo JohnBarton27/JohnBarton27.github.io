@@ -15,7 +15,7 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+	<link rel="icon" href="images/favicon.png" type="image/x-icon" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/favicon-144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/favicon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="img/favicon/favicon-54x54.png">
@@ -301,7 +301,7 @@
 			<div class="row text-right">
 				<div class="isotope-nav" data-isotope-nav="isotope">
 					<ul>
-						<li><a href="#" class="active" data-filter="*">All</a></li>
+						<li><a href="#" class="active" data-filter="*">Featured</a></li>
 						<li><a href="#" data-filter=".commissioned">Commissioned</a></li>
 						<li><a href="#" data-filter=".web-series">Web Series</a></li>
 						<li><a href="#" data-filter=".promo">Promotional</a></li>
@@ -311,10 +311,15 @@
 			</div><!-- Isotope filter end -->
 		</div>
 		
+        <script>
+            console.log("HERE");
+            $("#featuredFilter").click();
+        </script>
+        
 		<div class="container-fluid">
 			<div class="row">
 				<div id="isotope" class="isotope">
-					<div class="col-sm-3 commissioned isotope-item">
+					<div class="col-sm-3 commissioned top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/SG_Success_Thumb.png" alt="">
@@ -326,7 +331,7 @@
 						</div>
 					</div><!-- Isotope item end -->
 
-					<div class="col-sm-3 web-series isotope-item">
+					<div class="col-sm-3 web-series top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/DISCONNECTED_Thumb.png" alt="">
@@ -338,7 +343,7 @@
 						</div>
 					</div><!-- Isotope item end -->
 
-					<div class="col-sm-3 commissioned promo music isotope-item">
+					<div class="col-sm-3 commissioned promo music top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/E-Week_2016_Thumb.png" alt="">
@@ -350,7 +355,7 @@
 						</div>
 					</div><!-- Isotope item end -->
 
-					<div class="col-sm-3 commissioned promo isotope-item">
+					<div class="col-sm-3 commissioned promo top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/IIE_Promo_Thumb.png" alt="">
@@ -362,7 +367,7 @@
 						</div>
 					</div><!-- Isotope item end -->
 
-					<div class="col-sm-3 commissioned promo isotope-item">
+					<div class="col-sm-3 commissioned promo top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/SAAW_Thumb.png" alt="">
@@ -374,37 +379,13 @@
 						</div>
 					</div><!-- Isotope item end -->
 
-					<div class="col-sm-3 web-series isotope-item">
+					<div class="col-sm-3 web-series top isotope-item">
 						<div class="grid">
 							<figure class="effect-oscar">
 								<img src="images/portfolio/Everyday_Gator_Thumb.png" alt="">
 								<figcaption>
 									<h3>Everyday Gator</h3>
 									<a class="link icon-pentagon" href="Everyday-Gator.html"><i class="fa fa-link"></i></a>          
-								</figcaption>					
-							</figure>
-						</div>
-					</div><!-- Isotope item end -->
-
-					<div class="col-sm-3 commissioned promo isotope-item">
-						<div class="grid">
-							<figure class="effect-oscar">
-								<img src="images/portfolio/Bookstore_Sale_Thumb.png" alt="">
-								<figcaption>
-									<h3>Bookstore Sale</h3>
-									<a class="link icon-pentagon" href="Bookstore-Sale.html"><i class="fa fa-link"></i></a>
-								</figcaption>					
-							</figure>
-						</div>
-					</div><!-- Isotope item end -->
-
-					<div class="col-sm-3 commissioned isotope-item">
-						<div class="grid">
-							<figure class="effect-oscar">
-								<img src="images/portfolio/SAI_Welcome_Thumb.png" alt="">
-								<figcaption>
-									<h3>SAI Intro</h3>
-									<a class="link icon-pentagon" href="SAI-Intro.html"><i class="fa fa-link"></i></a>
 								</figcaption>					
 							</figure>
 						</div>
@@ -417,6 +398,18 @@
 								<figcaption>
 									<h3>Second Time</h3>
 									<a class="link icon-pentagon" href="Second-Time.html"><i class="fa fa-link"></i></a>
+								</figcaption>					
+							</figure>
+						</div>
+					</div>
+                    
+                    <div class="col-sm-3 commissioned promo isotope-item">
+						<div class="grid">
+							<figure class="effect-oscar">
+								<img src="images/portfolio/E-Week_2015_Thumb.png" alt="">
+								<figcaption>
+									<h3>E-Week 2015</h3>
+									<a class="link icon-pentagon" href="E-Week-2015.html"><i class="fa fa-link"></i></a>
 								</figcaption>					
 							</figure>
 						</div>
