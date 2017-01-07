@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-    <title>Tangible Productions</title>
+    <title>Blue Triangle Productions</title>
     <meta name="description" content="">	
 	<meta name="author" content="">
 
@@ -44,7 +44,9 @@
 	<link rel="stylesheet" href="css/cd-hero.css">
 	<!-- Style Swicther -->
 	<link id="style-switch" href="css/presets/preset1.css" media="screen" rel="stylesheet" type="text/css">
-
+    <!-- Google Font - Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -88,7 +90,7 @@
 				    </button>
 				    <div class="navbar-brand navbar-bg">
 					    <a href="index.html">
-					    	<img class="img-responsive" src="images/TangibleSiteLogo.png" alt="logo">
+					    	<img class="img-responsive" src="images/logo.png" alt="logo" style="width:90%; margin-top:5px">
 					    </a> 
 				    </div>                   
 				</div><!--/ Logo end -->
@@ -96,61 +98,16 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown active">
                        		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                            <li class="active"><a href="index.html">Home 1</a></li>
-		                            <li><a href="index-2.html">Home 2</a></li>
-		                            <li><a href="index-3.html">Home 3</a></li>
-		                            <li><a href="index-4.html">Home 4</a></li>
-		                        </ul>
-	                    	</div>
 	                    </li>
-						<li class="dropdown">
-                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                            <li><a href="about.html">About Us</a></li>
-		                            <li><a href="service.html">Services</a></li>
-		                            <li><a href="career.html">Career</a></li>
-		                            <li><a href="testimonial.html">Testimonials</a></li>
-		                            <li><a href="faq.html">Faq</a></li>
-		                        </ul>
-	                    	</div>
+                        <li class="dropdown">
+                       		<a href="about.html" class="dropdown-toggle">Company <i class="fa fa-angle-down"></i></a>
 	                    </li>
-						<li class="dropdown">
+                        <li class="dropdown">
                        		<a href="portfolio-classic.html" class="dropdown-toggle">Portfolio <i class="fa fa-angle-down"></i></a>
 	                    </li>
-	                    <li class="dropdown">
-                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                           	<li><a href="team.html">Our Team</a></li>
-		                           	<li><a href="about2.html">About Us - 2</a></li>
-		                           	<li><a href="service2.html">Services - 2</a></li>
-		                           	<li><a href="service-single.html">Services Single</a></li>
-		                           	<li><a href="pricing.html">Pricing Table</a></li>
-		                           	<li><a href="404.html">404 Page</a></li>
-		                        </ul>
-	                    	</div>
-	                    </li>
-	                    <li class="dropdown">
-                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                           	 <li><a href="blog-rightside.html">Blog with Sidebar</a></li>
-	                            	<li><a href="blog-item.html">Blog Single</a></li>
-		                        </ul>
-	                    	</div>
-	                    </li>
-	                    <li class="dropdown">
-                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
-                       		<div class="dropdown-menu">
-								<ul>
-		                           	 <li><a href="typography.html">Typography</a></li>
-	                            	<li><a href="elements.html">Elements</a></li>
-		                        </ul>
-	                    	</div>
-	                    </li>
+                        <li class="dropdown">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tangible Productions <i class="fa fa-angle-down"></i></a>
+	                    </li>	                    
             			<li><a href="contact.html">Contact</a></li>
                     </ul>
 				</nav><!--/ Navigation end -->
@@ -237,7 +194,7 @@
 			<div class="row">
 				<div class="col-md-12 heading">
 					<span class="title-icon pull-left"><i class="fa fa-video-camera"></i></span>
-					<h2 class="title">What can we do? <span class="title-desc">Tangible Productions has been producing quality content for more than 5 years.</span></h2>
+					<h2 class="title">What can we do? <span class="title-desc">Blue Triangle Productions has been producing quality content for more than 5 years.</span></h2>
 				</div>
 			</div><!-- Title row end -->
 
@@ -303,11 +260,6 @@
 				</div>
 			</div><!-- Isotope filter end -->
 		</div>
-		
-        <script>
-            console.log("HERE");
-            $("#featuredFilter").click();
-        </script>
         
 		<div class="container-fluid">
 			<div class="row">
@@ -427,7 +379,7 @@
 				<div class="facts two col-md-3 col-sm-6">
 					<span class="facts-icon"><i class="fa fa-youtube"></i></span>
 					<div class="facts-num">
-						<span class="counter">55,984</span>
+						<span id="viewCount" class="counter"></span>
 					</div>
 					<h3>YouTube Views</h3> 
 				</div>
@@ -452,132 +404,40 @@
 		</div><!--/ Container end -->
     </section><!--/ Counter end -->
 
-	<!-- Feature box start -->
-	<section id="feature" class="feature">
-		<div class="container">
-			<div class="row">
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-heart-o"></i></span>
-					<div class="feature-content">
-						<h3>Clean &amp; Modern Design</h3>
-						<p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
-					</div>
-				</div><!--/ End first featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-codepen"></i></span>
-					<div class="feature-content">
-						<h3>Useful Shortcodes</h3>
-						<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
-					</div>
-				</div><!--/ End 2nd featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-film"></i></span>
-					<div class="feature-content">
-						<h3>Parallax Section</h3>
-						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-					</div>
-				</div><!--/ End 3rd featurebox -->
-			</div><!-- Content row end -->
-
-			<div class="gap-40"></div>
-
-			<div class="row">
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-newspaper-o"></i></span>
-					<div class="feature-content">
-						<h3>Multipurpose Concept</h3>
-						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-					</div>
-				</div><!--/ End 1st featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-desktop"></i></span>
-					<div class="feature-content">
-						<h3>Responsive Layout</h3>
-						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-					</div>
-				</div><!--/ End 2nd featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-pagelines"></i></span>
-					<div class="feature-content">
-						<h3>Light wight Performance</h3>
-						<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
-					</div>
-				</div><!--/ End 3rd featurebox -->
-
-			</div><!-- Content row end -->
-
-			<div class="gap-40"></div>
-
-			<div class="row">
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-recycle"></i></span>
-					<div class="feature-content">
-						<h3>Free Lifetime Updates</h3>
-						<p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
-					</div>
-				</div><!--/ End first featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-diamond"></i></span>
-					<div class="feature-content">
-						<h3>Endless Possibilites</h3>
-						<p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
-					</div>
-				</div><!--/ End first featurebox -->
-
-				<div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-					<span class="feature-icon pull-left" ><i class="fa fa-whatsapp"></i></span>
-					<div class="feature-content">
-						<h3>24/7 Live Support</h3>
-						<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-					</div>
-				</div><!--/ End first featurebox -->
-			</div><!-- Content row end -->
-
-		</div><!--/ Container end -->
-	</section><!--/ Feature box end -->
-
-
 	<section id="image-block" class="image-block no-padding">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 ts-padding" style="height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;">
+				<div class="col-md-6 ts-padding" style="height:650px;background:url(images/Courtney-EG-Mic.png) 50% 50% / cover no-repeat;">
 				</div>
 				<div class="col-md-6 ts-padding img-block-right">
 					<div class="img-block-head text-center">
 						<h2>Know More About Our Company</h2>
-						<h3>Why Choose Us</h3>
-						<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.
-						</p>
+						<h3>Why Choose Us?</h3>
+						<p>Blue Triangle has long been a trusted provider of video and media services.</p>
 					</div>
-
 					<div class="gap-30"></div>
-
-					<div class="image-block-content">
-						<span class="feature-icon pull-left" ><i class="fa fa-bicycle"></i></span>
-						<div class="feature-content">
-							<h3>Tons of Features</h3>
-							<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-						</div>
-					</div><!--/ End 1st block -->
 
 					<div class="image-block-content">
 						<span class="feature-icon pull-left" ><i class="fa fa-diamond"></i></span>
 						<div class="feature-content">
-							<h3>PowerPack Theme</h3>
-							<p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+							<h3>Production Quality</h3>
+							<p>Blue Triangle maintains an arsenal of industry-level equipment to stay competitive and provide you with the highest production quality possible.</p>
 						</div>
 					</div><!--/ End 1st block -->
 
 					<div class="image-block-content">
-						<span class="feature-icon pull-left" ><i class="fa fa-street-view"></i></span>
+						<span class="feature-icon pull-left" ><i class="fa fa-user"></i></span>
 						<div class="feature-content">
-							<h3>Day Night Support</h3>
-							<p>Simply dummy text and typesettings industry has been the industry</p>
+							<h3>Dedication to You</h3>
+							<p>At Blue Triangle, our customers come first. We'll work with you from inception to completion of the projects that mean the most to you.</p>
+						</div>
+					</div><!--/ End 1st block -->
+
+					<div class="image-block-content">
+						<span class="feature-icon pull-left" ><i class="fa fa-forward"></i></span>
+						<div class="feature-content">
+							<h3>Experience</h3>
+							<p>With a team of experienced video professionals, we're well-equipped to handle any need you may have.</p>
 						</div>
 					</div><!--/ End 1st block -->
 
@@ -586,14 +446,89 @@
 		</div>
 	</section><!--/ Image block end -->
 
+        
+    <!-- Clients start -->
+	<section id="clients" class="clients" style="color:black">
+        
+		<div class="container">
+            <div class="row">
+				<div class="col-md-12 heading">
+					<span class="title-icon pull-left"><i class="fa fa-weixin"></i></span>
+					<h2 class="title" style="color:#323232">Our Clients <span class="title-desc">Organizations and companies we've worked for, new and old.</span></h2>
+				</div>
+			</div><!-- Title row end -->
+			<div class="row wow fadeInLeft">
+		      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
+		        <figure class="item client_logo">
+		          <a href="https://versetracker.com/battles/brevards-battle-arena">
+		            <img src="images/clients/BBA.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://www.sg.ufl.edu/">
+		            <img src="images/clients/UFSG.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://www.studyedge.com/">
+		            <img src="images/clients/StudyEdge.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://irha.housing.ufl.edu/">
+		            <img src="images/clients/IRHA.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://ufbec.org/">
+		            <img src="images/clients/UFBEC.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://ufiie.org/">
+		            <img src="images/clients/IIE.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="http://www.alachuahumane.org/">
+		            <img src="images/clients/Alachua_Humane.png" alt="client">
+		          </a>
+		        </figure>
+		        <figure class="item client_logo">
+		          <a href="https://www.studentinvolvement.ufl.edu/">
+		            <img src="images/clients/SAI.png" alt="client">
+		          </a>
+		        </figure>
+		      </div><!-- Owl carousel end -->
+	    	</div><!-- Main row end -->
+		</div><!--/ Container end -->
+	</section><!--/ Clients end -->
+        
 
+     <!-- Parallax 1 start -->
+	<section class="parallax parallax1">
+		<div class="parallax-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Work with Blue Triangle today.</h2>
+					<hr>
+					<p>
+						<a href="portfolio-classic.html" class="btn btn-primary white">See Our Work</a>
+						<a href="#" class="btn btn-primary solid">Get In Touch</a>
+					</p>
+				</div>
+			</div>
+		</div><!-- Container end -->
+    </section><!-- Parallax 1 end -->
+        
 	<!-- Team start -->
 	<section id="team" class="team">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 heading">
 					<span class="title-icon pull-left"><i class="fa fa-weixin"></i></span>
-					<h2 class="title">Meet with our Team <span class="title-desc">A Quality Experience Team with 4 years experience</span></h2>
+					<h2 class="title">Meet our Team <span class="title-desc">A Quality Team with more than 5 years of experience.</span></h2>
 				</div>
 			</div><!-- Title row end -->
 
@@ -601,19 +536,16 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team wow slideInLeft">
 						<div class="img-hexagon">
-							<img src="images/team/team1.jpg" alt="">
+							<img src="images/team/JohnBarton.png" alt="">
 							<span class="img-top"></span>
 							<span class="img-bottom"></span>
 						</div>
 						<div class="team-content">
-							<h3>Vosgi Varduhi</h3>
-							<p>Web Designer</p>
+							<h3>John Barton</h3>
+							<p>President & Founder</p>
 							<div class="team-social">
-								<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
-								<a class="twt" href="#"><i class="fa fa-twitter"></i></a>
-								<a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-								<a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
-								<a class="dribble" href="#"><i class="fa fa-dribbble"></i></a>
+								<a class="fb" href="https://www.facebook.com/Barton.John"><i class="fa fa-facebook"></i></a>
+								<a class="twt" href="https://www.twitter.com/JohnBarton27"><i class="fa fa-twitter"></i></a>
 							</div>
 						</div>
 					</div>	
@@ -621,19 +553,15 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team wow slideInLeft">
 						<div class="img-hexagon">
-							<img src="images/team/team2.jpg" alt="">
+							<img src="images/team/ChristianTorres.png" alt="">
 							<span class="img-top"></span>
 							<span class="img-bottom"></span>
 						</div>
 						<div class="team-content">
-							<h3>Robert Aleska</h3>
-							<p>Web Designer</p>
+							<h3>Christian Torres</h3>
+							<p>Creative Consultant</p>
 							<div class="team-social">
-								<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
-								<a class="twt" href="#"><i class="fa fa-twitter"></i></a>
-								<a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-								<a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
-								<a class="dribble" href="#"><i class="fa fa-dribbble"></i></a>
+								<a class="twt" href="https://www.twitter.com/C_A_Torres"><i class="fa fa-twitter"></i></a>
 							</div>
 						</div>
 					</div>
@@ -682,301 +610,7 @@
 		</div><!--/ Container end -->
     </section><!--/ Team end -->
 
-    <!-- Parallax 1 start -->
-	<section class="parallax parallax1">
-		<div class="parallax-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<h2>Are You Ready to Buy This Template!</h2>
-					<h3>Just Click Button and Use Your Own</h3>
-					<p>
-						<a href="#" class="btn btn-primary white">Purchase Now</a>
-						<a href="#" class="btn btn-primary solid">Get In Touch</a>
-					</p>
-				</div>
-			</div>
-		</div><!-- Container end -->
-    </section><!-- Parallax 1 end -->
-
-    <!-- Pricing table start -->
-	<section id="pricing" class="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 heading">
-					<span class="title-icon pull-left"><i class="fa fa-university"></i></span>
-					<h2 class="title">Pricing Table <span class="title-desc">We Love to Work with Passion</span></h2>
-				</div>
-			</div><!-- Title row end -->
-	  		<div class="row">
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Basic <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>49</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Standared <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>99</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.4s">
-				    <div class="plan text-center featured">
-				        <span class="plan-name">Professional <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>149</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-
-				<!-- plan start -->
-				<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
-				    <div class="plan text-center">
-				        <span class="plan-name">Premium <small>Monthly plan</small></span>
-				        <p class="plan-price"><sup class="currency">$</sup><strong>399</strong><sub>.99</sub></p>
-				        <ul class="list-unstyled">
-				            <li>100GB Monthly Bandwidth</li>
-				            <li>$100 Google AdWords</li>
-				            <li>100 Domain Hosting</li>
-				            <li>SSL Shopping Cart</li>
-				            <li>24/7 Live Support</li>
-				        </ul>
-				        <a class="btn btn-primary" href="#.">Sign Up</a>
-				    </div>
-				</div><!-- plan end -->
-			</div><!--/ Content row end -->
-		</div><!--/  Container end-->
-	</section><!--/ Pricing table end -->
-
-
-	<!-- Testimonial start-->
-	<section class="testimonial parallax parallax2">
-		<div class="parallax-overlay"></div>
-	  	<div class="container">
-		    <div class="row">
-			    <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
-			        <div class="item">
-			          	<div class="testimonial-thumb">
-			            	<img src="images/team/testimonial1.jpg" alt="testimonial">
-			          	</div>
-			          	<div class="testimonial-content">
-				            <p class="testimonial-text">
-				              Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-				            </p>
-			            	<h3 class="name">Sarah Arevik<span>Chief Executive</span></h3>
-			          	</div>
-			        </div>
-			        <div class="item">
-			          	<div class="testimonial-thumb">
-			            	<img src="images/team/testimonial2.jpg" alt="testimonial">
-			          	</div>
-				        <div class="testimonial-content">
-				            <p class="testimonial-text">
-				              Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-				            </p>
-				            <h3 class="name">Narek Bedros<span>Sr. Manager</span></h3>
-				        </div>
-			        </div>
-			        <div class="item">
-				        <div class="testimonial-thumb">
-				            <img src="images/team/testimonial3.jpg" alt="testimonial">
-				        </div>
-			          	<div class="testimonial-content">
-				            <p class="testimonial-text">
-				              Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-				            </p>
-			            	<h3 class="name">Taline Lucine<span>Sales Manager</span></h3>
-			          	</div>
-			        </div>
-			    </div><!--/ Testimonial carousel end-->
-		    </div><!--/ Row end-->
-	  	</div><!--/  Container end-->
-	</section><!--/ Testimonial end-->
-
-
-	<!-- Clients start -->
-	<section id="clients" class="clients">
-		<div class="container">
-			<div class="row wow fadeInLeft">
-		      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client1.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client2.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client3.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client4.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client5.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client6.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client7.png" alt="client">
-		          </a>
-		        </figure>
-		        <figure class="item client_logo">
-		          <a href="#">
-		            <img src="images/clients/client8.png" alt="client">
-		          </a>
-		        </figure>
-		      </div><!-- Owl carousel end -->
-	    	</div><!-- Main row end -->
-		</div><!--/ Container end -->
-	</section><!--/ Clients end -->
-	
-
-	<!-- Footer start -->
-	<footer id="footer" class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12 footer-widget">
-					<h3 class="widget-title">Recent Posts</h3>
-					<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Bulgaria claims to find Europe's 'oldest town'</a></h4>
-								<p class="post-meta">
-									<span class="author">Posted by John Doe</span>
-									<span class="post-meta-cat">in<a href="#"> Blog</a></span>
-								</p>
-							</div>
-						</div><!-- 1st Latest Post end -->
-
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Few Answers in Case of Murdered Law Professor</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Mar 15, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">03</a></span>
-								</p>
-							</div>
-						</div><!-- 2nd Latest Post end -->
-
-						<div class="latest-post-items media">
-							<div class="latest-post-content media-body">
-								<h4><a href="#">Over the year we have lots of experience in our field</a></h4>
-								<p class="post-meta">
-									<span class="date"><i class="icon icon-calendar"></i> Apr 17, 2015</span>
-									<span class="post-meta-comments"><i class="icon icon-bubbles4"></i> <a href="#">14</a></span>
-								</p>
-							</div>
-						</div><!-- 3rd Latest Post end -->
-	
-				</div><!--/ End Recent Posts-->
-				
-
-				<div class="col-md-4 col-sm-12 footer-widget">
-					<h3 class="widget-title">Flickr Photos</h3>
-
-					<div class="img-gallery">
-						<div class="img-container">
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/1.jpg">
-								<img src="images/gallery/1.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/2.jpg">
-								<img src="images/gallery/2.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/3.jpg">
-								<img src="images/gallery/3.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/4.jpg">
-								<img src="images/gallery/4.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/5.jpg">
-								<img src="images/gallery/5.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/6.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/7.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/8.jpg" alt="">
-							</a>
-							<a class="thumb-holder" data-rel="prettyPhoto" href="images/gallery/6.jpg">
-								<img src="images/gallery/9.jpg" alt="">
-							</a>
-						</div>
-					</div>
-				</div><!--/ end flickr -->
-
-				<div class="col-md-3 col-sm-12 footer-widget footer-about-us">
-					<h3 class="widget-title">About Craft</h3>
-					<p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
-					<h4>Address</h4>
-					<p>1102 Saint Marys, Junction City, KS</p>
-					<div class="row">
-						<div class="col-md-6">
-							<h4>Email:</h4>
-							<p>info@craftbd.com</p>
-						</div>
-						<div class="col-md-6">
-							<h4>Phone No.</h4>
-							<p>+(785) 238-4131</p>
-						</div>
-					</div>
-                    <form action="#" role="form">
-                        <div class="input-group subscribe">
-                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                            <span class="input-group-addon">
-                              <button class="btn" type="submit"><i class="fa fa-envelope-o"> </i></button>
-                            </span>                        
-                        </div>
-                    </form>
-				</div><!--/ end about us -->
-
-			</div><!-- Row end -->
-		</div><!-- Container end -->
-	</footer><!-- Footer end -->
-	
+   
 
 	<!-- Copyright start -->
 	<section id="copyright" class="copyright angle">
@@ -1013,7 +647,7 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<div class="copyright-info">
-         			 &copy; Copyright 2015 Craft. <span>All Rights Reserved</span>
+         			 Media You Can Feel, LLC - 2017
         			</div>
 				</div>
 			</div><!--/ Row end -->
@@ -1055,6 +689,21 @@
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<!-- Template custom -->
 	<script type="text/javascript" src="js/custom.js"></script>
+        
+    <script>
+        var totalViewCount = 10;
+        var data = "";
+        $.ajax({
+            dataType: "json",
+            url: "https://www.googleapis.com/youtube/v3/videos?part=statistics&id=DNPDkyTpBZo&key=AIzaSyBgeWpJMyXUu820VBfNw8cvILHBcVnDmPE",
+            data: data,
+            success: function(data) {
+                console.log("HERE");
+                totalViewCount = data.items[0].statistics.viewCount;
+                document.getElementById("viewCount").innerHTML = totalViewCount;
+            }
+        })
+    </script>    
 	</div><!-- Body inner end -->
 </body>
 </html>

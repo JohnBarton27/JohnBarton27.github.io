@@ -360,7 +360,7 @@ blockquote {
 }
 
 .parallax1{
-	background: url(../images/parallax/parallax1.jpg) no-repeat;
+	background: url(../images/landing/Eddie_Turlington.png) no-repeat;
 }
 
 .parallax2{
@@ -413,7 +413,7 @@ blockquote {
 }
 
  .title-desc{
- 	font-family: 'Lato', serif;
+ 	font-family: 'Source Sans Pro', sans-serif;
  	font-size: 16px;
  	line-height: 18px;
  	font-weight: 400;
