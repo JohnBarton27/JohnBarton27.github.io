@@ -3373,3 +3373,12 @@ a.close-styler{
 .style-switch-wrapper #preset6 {
 	background-color: #8C42BA;
 }
+
+#banner-area img {
+	width: 100%;
+}
+
+#banner-area {
+	max-height: 300px;
+	overflow: hidden;
+}
